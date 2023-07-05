@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
 @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -869,4 +871,6 @@ footer {
 .text {
     font-weight: normal;
     color: dimgray;
+    font-family: 'Poppins', sans-serif;
+
 }
