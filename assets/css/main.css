@@ -867,6 +867,6 @@ footer {
 }
 
 .text {
-    font-weight: 400;
-    color: darkslategray;
+    font-weight: normal;
+    color: dimgray;
 }
