@@ -865,3 +865,8 @@ footer {
       width: 30%;
    }
 }
+
+.text {
+    font-weight: 400;
+    color: darkslategray;
+}
