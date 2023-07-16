@@ -1,7 +1,7 @@
   document.addEventListener('DOMContentLoaded', function() {
       // Создаем игровое поле
       const boardSize = 10;
-      const bombCount = 3;
+      const bombCount = 4;
       let gameBoard = [];
       let isGameOver = false;
       let cellsOpened = 0;
