@@ -829,6 +829,15 @@ background-color:yellow;
 .links  a:hover:after {
     background-color: black;
 }
+
+@media (max-width:610px) {
+
+  .links ul {
+    flex-direction: column;
+    place-items: inherit;
+}
+
+}
 /*--- footer ---*/
 
 footer {
