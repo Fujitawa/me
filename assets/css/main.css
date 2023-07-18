@@ -675,6 +675,15 @@ span.gl:hover {
    gap: 60px;
 }
 
+.useful::before {
+    content: "";
+    position: absolute;
+    left: calc(63.5% + 15px);
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    border-left: 1px dashed var(--color-0);
+}
 .one {
    display: flex;
    flex-direction: column;
