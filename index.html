@@ -282,7 +282,7 @@
   <ul id="links-list"></ul>
 </div>
 <script>
-  // Загрузка данных из JSON-файла
+// Загрузка данных из JSON-файла
 fetch('links.json')
   .then(response => response.json())
   .then(data => {
@@ -297,7 +297,7 @@ fetch('links.json')
       const anchor = document.createElement('a');
       anchor.href = link.url;
       anchor.target = '_blank';
-      anchor.textContent = link.text;
+      anchor.innerHTML = link.icon + ' ' + link.text;
       listItem.appendChild(anchor);
       linksList.appendChild(listItem);
     });
