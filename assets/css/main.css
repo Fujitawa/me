@@ -794,6 +794,8 @@ span.tag {
     text-align: center;
     place-items: flex-start;
     overflow-wrap: anywhere;
+    margin: 0;
+    padding: 0;
 }
 
 
