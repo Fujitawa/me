@@ -7,7 +7,7 @@
     },
     {
       "url": "https://example.com/",
-      "text": "Example Website"
+      "text": "Example Website",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     }
   ]
