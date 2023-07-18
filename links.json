@@ -2,12 +2,12 @@
   "links": [
     {
       "url": "https://shadows.brumm.af/",
-      "text": "shadows.brumm.af",
+      "text": "Smooth shadow",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     },
     {
-      "url": "https://example.com/",
-      "text": "Example Website",
+      "url": "https://cssgrid-generator.netlify.app/",
+      "text": "Grid generator",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     }
   ]
