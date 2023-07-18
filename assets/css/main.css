@@ -787,9 +787,7 @@ span.tag {
 }
 
 /* - links - */
-
-
-.links {
+.links ul {
     gap: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -799,7 +797,7 @@ span.tag {
 }
 
 
-.link {
+.links a {
     background-color: gold;
     padding: 5px;
     border-radius: 4px;
@@ -811,11 +809,11 @@ span.tag {
     transition:.3s;
 }
 
-.link:hover {
+.links a:hover {
 background-color:yellow;
 }
 
-.link::after {
+.links  a:after {
   content: "";
   background-color: var(--color-10);
   position: absolute;
@@ -826,7 +824,7 @@ background-color:yellow;
   top: 0;
 }
 
-.link:hover:after {
+.links  a:hover:after {
     background-color: black;
 }
 /*--- footer ---*/
