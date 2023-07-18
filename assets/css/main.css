@@ -673,6 +673,7 @@ span.gl:hover {
    flex-direction: row;
    font-family: var(--g-font);
    gap: 60px;
+   position:relative;
 }
 
 .useful::before {
