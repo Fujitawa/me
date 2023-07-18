@@ -390,7 +390,7 @@ h5 {
 }
 a {
    color: var(--body-font-color);
-   font-family: var(--g-font);
+   font-family: poppins;
 }
 
 li {
