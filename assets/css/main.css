@@ -805,11 +805,19 @@ span.tag {
     border-radius: 4px;
     display: flex;
     gap: 10px;
-    text-align: center;
     align-items: center;
     position: relative;
-    transition:.3s;
+    transition: .3s;
 }
+
+.links a i {
+    flex-shrink: 0; 
+}
+
+.links a span {
+    text-align: center;
+    width: 100%; 
+  }
 
 .links a:hover {
 background-color:yellow;
