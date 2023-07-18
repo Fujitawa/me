@@ -2,27 +2,27 @@
   "links": [
     {
       "url": "https://shadows.brumm.af/",
-      "text": "Smooth shadow",
+      "text": "<span>Smooth shadow</span>",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     },
     {
       "url": "https://cssgrid-generator.netlify.app/",
-      "text": "Grid generator",
+      "text": "<span>Grid generator</span>",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     },
     {
       "url": "https://hype4.academy/tools/glassmorphism-generator",
-      "text": "Glassmorphism",
+      "text": "<span>Glassmorphism</span>",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     },
     {
       "url": "https://www.shapedivider.app/",
-      "text": "Shape Dividers",
+      "text": "<span>Shape Dividers</span>",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     },
     {
       "url": "https://www.colorhexa.com/",
-      "text": "Color encyclopedia",
+      "text": "<span>Color encyclopedia</span>",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     }
   ]
