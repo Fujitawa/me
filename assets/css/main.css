@@ -390,6 +390,7 @@ h5 {
 }
 a {
    color: var(--body-font-color);
+   font-family: var(--g-font);
 }
 
 li {
@@ -671,7 +672,6 @@ span.gl:hover {
 .useful {
    display: flex;
    flex-direction: row;
-   font-family: var(--g-font);
    gap: 60px;
    position:relative;
 }
