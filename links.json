@@ -9,6 +9,11 @@
       "url": "https://cssgrid-generator.netlify.app/",
       "text": "Grid generator",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
+    },
+     {
+      "url": "https://www.colorhexa.com/",
+      "text": "Color encyclopedia",
+      "icon": "<i class=\"fa-solid fa-link\"></i>"
     }
   ]
 }
