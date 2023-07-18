@@ -20,7 +20,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<script src="assets/js/tabs.js"></script>
 		<script src="assets/js/all.js"></script>
-		<script src="assets/js/links.js"></script>
 		<link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
 		<link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
@@ -291,6 +290,30 @@
 <div class="links">
   <ul id="links-list"></ul>
 </div>
+<script>
+  // Загрузка данных из JSON-файла
+fetch('links.json')
+  .then(response => response.json())
+  .then(data => {
+    const linksList = document.getElementById('links-list');
+    
+    // Очистка списка ссылок
+    linksList.innerHTML = '';
+
+    // Добавление ссылок из JSON
+    data.links.forEach(link => {
+      const listItem = document.createElement('li');
+      const anchor = document.createElement('a');
+      anchor.href = link.url;
+      anchor.target = '_blank';
+      anchor.textContent = link.text;
+      listItem.appendChild(anchor);
+      linksList.appendChild(listItem);
+    });
+  })
+  .catch(error => console.error(error));
+
+</script>							
 				<div>
 
 					</div>
