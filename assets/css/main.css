@@ -813,6 +813,7 @@ background-color:yellow;
   height: 100%;
   left: 29px;
   transition: .5s;
+  top: 0;
 }
 
 .link:hover:after {
