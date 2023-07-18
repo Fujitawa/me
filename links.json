@@ -10,7 +10,12 @@
       "text": "Grid generator",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
     },
-     {
+    {
+      "url": "https://hype4.academy/tools/glassmorphism-generator",
+      "text": "Glassmorphism",
+      "icon": "<i class=\"fa-solid fa-link\"></i>"
+    },
+    {
       "url": "https://www.colorhexa.com/",
       "text": "Color encyclopedia",
       "icon": "<i class=\"fa-solid fa-link\"></i>"
