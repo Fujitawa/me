@@ -44,4 +44,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             info.style.transform = 'translateY(100%)';
         });
     });
+
+    document.querySelectorAll('[title]').forEach(item => {
+        let tooltipText = item.getAttribute('title');
+        item.removeAttribute('title');
+        let tooltipSpan = document.createElement('span');
+        tooltipSpan.classList.add('tooltiptext');
+        tooltipSpan.textContent = tooltipText;
+        item.classList.add('tooltip');
+        item.appendChild(tooltipSpan);
+    });
 });
