@@ -6,17 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
       data.forEach(function(article) {
         var articleLink = document.createElement("a");
+        var articleContentSpan = document.createElement("span"); // Create a single span for h5 and p
         var articleTitle = document.createElement("h5");
         var articleDescription = document.createElement("p");
         var articleImage = document.createElement("img");
 
-        articleLink.href = article.link ? article.link : "#"; // Проверяем наличие поля "link"
+        articleLink.href = article.link ? article.link : "#"; // Check for the presence of the "link" field
         articleTitle.textContent = article.title;
         articleDescription.textContent = article.description;
         articleImage.src = article.image;
 
-        articleLink.appendChild(articleTitle);
-        articleLink.appendChild(articleDescription);
+        articleContentSpan.appendChild(articleTitle);
+        articleContentSpan.appendChild(articleDescription);
+
+        articleLink.appendChild(articleContentSpan); // Append the span containing h5 and p to the articleLink
         articleLink.appendChild(articleImage);
         mainElement.appendChild(articleLink);
       });
@@ -53,4 +56,3 @@ function toggleTheme() {
   }
 }
 });
-
