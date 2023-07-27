@@ -134,6 +134,7 @@ main {
   grid-template-columns: repeat(5, 1fr);
   gap: var(--g5);
   padding: var(--p);
+  place-items: start;
 }
 
 
