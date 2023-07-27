@@ -109,9 +109,9 @@ main a:hover {
 }
 
 main a img {
-  width: 100px;
-  height: 100px;
-  border-radius: 4px;
+    width: 90px;
+    height: auto;
+    border-radius: 4px;
 }
 
 main a h5 {
