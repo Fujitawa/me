@@ -124,7 +124,7 @@ main a p {
   margin: 0;
 }
 
-article a span {
+main a span {
     order: 1;
     display: flex;
     flex-direction: column;
