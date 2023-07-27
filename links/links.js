@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Функция для скрытия кнопки "крестик" и сброса фильтра
   function hideClearFilterButton() {
     clearFilterButton.style.display = "none";
-    createLinkElements(jsonData);
+    linksToShow = jsonData.links.slice(); // Восстанавливаем список ссылок до исходного состояния
+    displayLinks();
     showMoreButton.style.display = "none"; // Скрываем кнопку "Показать еще"
   }
 
