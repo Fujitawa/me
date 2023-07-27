@@ -1,14 +1,14 @@
 :root {
-  --primary-color: black; /* Обычный цвет элементов */
-  --background-color: white; /* Обычный фон */;
+  --primary-color: black; 
+  --background-color: white; 
   --border:#cccccc;
   --link:steelblue;
 }
 
 /* Темная тема */
 [dark] {
-  --primary-color: white; /* Темный цвет элементов */
-  --background-color: #1f2327; /* Темный фон */
+  --primary-color: white; 
+  --background-color: #1f2327; 
   --link:orange;
 }
 
