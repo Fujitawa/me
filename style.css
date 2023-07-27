@@ -93,10 +93,9 @@ main a:hover {
 
 main a {
     display: grid;
+    grid-template-columns: 100px auto;
     width: 100%;
     max-width: 500px;
-    max-height: max-content;
-    height: max-content;
     column-gap: 0.55em;
     border-radius: 5px;
     overflow: hidden;
@@ -114,9 +113,9 @@ main a *:nth-child(1) {
 }
 
 main a *:nth-child(2) {
-  grid-area: 2 / 2 / 3 / 3;
-  font-size: 13px;
-  padding: 0.275em;
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 13px;
+    padding: 0.5rem;
 }
 
 main a *:nth-child(3) {
