@@ -120,8 +120,12 @@ main a h5 {
 }
 
 main a p {
-  font-size: 13px;
-  margin: 0;
+    font-size: 13px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 main a span {
