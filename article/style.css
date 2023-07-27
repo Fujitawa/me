@@ -1,0 +1,128 @@
+:root {
+  --primary-color: black; /* Обычный цвет элементов */
+  --background-color: white; /* Обычный фон */;
+  --border:#cccccc;
+  --link:steelblue;
+}
+
+/* Темная тема */
+[dark] {
+  --primary-color: white; /* Темный цвет элементов */
+  --background-color: #1f2327; /* Темный фон */
+  --link:orange;
+}
+
+
+* {
+  box-sizing: border-box;
+  border:none;
+}
+
+::selection {
+  background-color: #e0e0e0ee;
+  color: black;
+ 
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 0.3px;
+}
+
+body {
+  font-size: 14px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+h5, p {
+    margin: 0;
+    padding: 0;
+}
+hr {
+  border-top:1px solid var(--border);
+}
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+article, footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0.575rem;
+    width: 100%;
+}
+
+article {
+  text-align: justify;
+}
+
+footer {
+    border-top: var(--border) 1px solid;
+}
+
+nav {
+    display: flex;
+    padding: .875em .875em 0 .875em;
+    align-items: center;
+    gap: 10px;
+}
+
+nav > *:hover {
+opacity: .4;
+}
+
+.palka {
+    width: 1px;
+    height: 15px;
+    opacity: .5;
+    background: var(--primary-color);
+}
+
+button {
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  color:var(--primary-color);
+  font-size: 18px;
+  padding: 0;
+}
+
+
+.images {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.author {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5px;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+}
+
+
+
+.date {     opacity: .5;}
+
