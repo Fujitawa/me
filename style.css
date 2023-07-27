@@ -90,53 +90,56 @@ a {
 main a:hover {
   opacity: 0.8;
 }
+
 main a {
-    display: grid;
-    grid-template-areas:
-        "image title"
-        "image description";
-    grid-template-columns: 120px auto;
-    gap: 10px;
-    padding: 10px;
-    border: 1px solid var(--border);
-    text-decoration: none;
-    color: var(--primary-color);
-    background: var(--surface);
-    border-radius: 5px;
-    transition: 0.2s;
-    box-shadow: var(--shadow);
-    max-width: 500px;
-    width: 100%;
+  display: grid;
+  grid-template-areas: "image title" "image description";
+  grid-template-columns: 120px auto;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--primary-color);
+  background: var(--surface);
+  border-radius: 5px;
+  transition: 0.2s;
+  box-shadow: var(--shadow);
+  max-width: 500px;
+  width: 100%;
 }
+
+main a img {
+  grid-area: image;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+main a h5 {
+  grid-area: title;
+  font-size: 15px;
+  margin: 0;
+}
+
+main a p {
+  grid-area: description;
+  font-size: 13px;
+  margin: 0;
+  overflow-wrap: break-word; /* Add this line to wrap long words */
+  max-height: 120px; /* Set the maximum height for the description */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Медиа-запрос для мобильных устройств (ширина экрана до 768 пикселей) */
+@media (max-width: 768px) {
+  main a {
+    gap: 5px;
+    padding: 5px;
+  }
+
   main a img {
-    grid-area: image;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 4px;
+    width: 100%;
+    height: auto;
+  }
 }
-
-  main a h5 {
-    grid-area: title;
-    font-size: 15px;
-    margin: 0;
-  }
-
-  main a p {
-    grid-area: description;
-    font-size: 13px;
-    margin: 0;
-  }
-
-  /* Медиа-запрос для мобильных устройств (ширина экрана до 768 пикселей) */
-  @media (max-width: 768px) {
-    main a {
-      gap: 5px;
-      padding: 5px;
-    }
-
-    main a img {
-      width: 100%;
-      height: auto;
-    }
-  }
